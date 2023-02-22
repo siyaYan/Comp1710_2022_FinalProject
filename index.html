@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- basic setting and link in the Head -->
+
+<head>
+    <link rel='stylesheet' id="CSS1" type="text/css" href="./CSS/dark.css" title="dark">
+    <link rel='stylesheet' id="CSS2"  type="text/css" href="./CSS/light.css" title="light" DISABLED>
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee Shade'>
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photoGallery</title>
+
+</head>
+
+
+<!-- this page contain a dance genre photo gallery which combined two types gallery together with interactive-->
+
+<body id="photoGallery">
+
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="./index.html">Gallery</a>
+        <a href="./socialfeed.html">SocialFeed</a>
+        <a href="./reflection.html">Reflection</a>
+        <a href="./validation.html">Validation</a>
+        <a href="./original.html">Original</a>
+        <div class="dropdown">
+            <button class="dropbtn">Others
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./introduction.html">Introduction</a>
+                <a href="./imagemap.html">Imagemap</a>
+                <a href="./sourcelog.html">SourceLog</a>
+                <a href="./sitemap.html">Sitemap</a>
+                <a href="./feedback.html">Feedback</a>
+            </div>
+        </div>
+      </div>  
+
+    <!-- The social media icon bar -->
+    <!-- This is share button and follow button group -->
+
+    <div class="icon-bar">
+        <a href="javascript:changeCss(1)" style="background-color: rgba(10, 10, 10, 0.6); color:antiquewhite" >dark</a>
+        
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpartch.anu.edu.au.virtual.anu.edu.au%2F%7Eu7167582%2Findex.html&amp;src=sdkpreparse"
+            class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter"
+            data-text="This is a wonderful dancer website!"
+            data-url="http://partch.anu.edu.au.virtual.anu.edu.au/~u7167582/index.html"><i
+                class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCKi9kxQTKMKkepFSroaoLXw" class="youtube"><i
+                class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/siyayan1222" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/xiran-yan-363a02189" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+        <a href="javascript:changeCss(2)" style="background-color: rgba(255, 255, 255, 0.7); color:black">light</a>
+
+    </div>
+    <!-- head title of this page -->
+    <div class="title">
+        <h1>Dance Genre Photo Gallery</h1>
+    </div>
+
+    <!-- image gallery section1 -->
+    <div class="maincontent">
+        <!-- Slide images with number text -->
+        <div class="mySlides">
+            <!-- number text -->
+            <div class="numbertext">1 / 6</div>
+            <!-- image link -->
+            <img src="./Images/ballet2.png" alt="balletdance">
+            <!-- text block -->
+            <div class="text-block">
+                <p>A group of ballet dancers are performing!</p>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="./Images/folk2.png" alt="folkdance">
+            <div class="text-block">
+                <p>Several folk dancers are circling!</p>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="./Images/comtemporary2.png" alt="comtemporarydance">
+            <div class="text-block">
+                <p>Some comtemporary dancers are stretching!</p>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="./Images/folk3.png" alt="folkdance">
+            <div class="text-block">
+                <p>A group of folk dancers are posing!</p>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="./Images/ballet3.png" alt="balletdance">
+            <div class="text-block">
+                <p>Three ballet dancers are dancing!</p>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="./Images/jazz2.png" alt="jazzdance">
+            <div class="text-block">
+                <p> One jazz dancer is dancing on the floor!</p>
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- Use JS function to count -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <!-- six column to show thumbnails and set slide number-->
+            <div class="column">
+                <img class="demo cursor" src="./Images/ballet2.png" onclick="currentSlide(1)" alt="Ballet Dance">
+            </div>
+            <!-- same as above -->
+            <div class="column">
+                <img class="demo cursor" src="./Images/folk2.png" onclick="currentSlide(2)" alt="Folk Dance">
+            </div>
+            <!-- same as above -->
+            <div class="column">
+                <img class="demo cursor" src="./Images/comtemporary2.png" onclick="currentSlide(3)"
+                    alt="Comtemporary Dance">
+            </div>
+            <!-- same as above -->
+            <div class="column">
+                <img class="demo cursor" src="./Images/folk3.png" onclick="currentSlide(4)" alt="Folk Dance">
+            </div>
+            <!-- same as above -->
+            <div class="column">
+                <img class="demo cursor" src="./Images/ballet3.png" onclick="currentSlide(5)" alt="Ballet Dance">
+            </div>
+            <!-- same as above -->
+            <div class="column">
+                <img class="demo cursor" src="./Images/jazz2.png" onclick="currentSlide(6)" alt="Jazz Dance">
+            </div>
+        </div>
+    </div>
+
+    <!-- image gallery section2 -->
+    <div class="maincontent">
+
+        <!-- contain 5 items:5 dance genres -->
+        <div class="item">
+            <!-- each item have two parts:the smaller part shows the genre,the bigger part shows the description -->
+            <div class="container">
+                <a href="https://www.youtube.com/watch?v=zV1qLYukTH8">
+                    <img src="./Images/balletDance.png" alt="balletDance" class="image">
+                    <div class="overlay">Ballet Dance</div>
+                </a>
+            </div>
+            <div class="dancetext">
+                <a href="https://en.wikipedia.org/wiki/Ballet">
+                    <img src="./Images/ballet.png" alt="ballet" class="image">
+                    <div class="content">
+                        Ballet (French: [balɛ]) is a type of performance dance that originated during the Italian
+                        Renaissance in the fifteenth century and later developed into a concert dance form in France and
+                        Russia. It has since become a widespread and highly technical form of dance with its own
+                        vocabulary.
+                        Ballet has been influential globally and has defined the foundational techniques which are used
+                        in
+                        many other dance genres and cultures. Various schools around the world have incorporated their
+                        own
+                        cultures. As a result, ballet has evolved in distinct ways.
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="item">
+
+            <div class="dancetext">
+                <a href="https://en.wikipedia.org/wiki/Street_dance">
+                    <img src="./Images/street.png" alt="street" class="image">
+                    <div class="content">
+                        Street dance is an umbrella term for a large number of social dance styles such
+                        as: breakdancing, popping, locking, house dance, waacking etc. Social dance styles have many
+                        accompanying steps and foundations, created organically from a culture, a moment in time, a way
+                        of
+                        life, and influenced by natural social interaction. These dances are a part of the vernacular
+                        culture of the geographical area that they come from.
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.youtube.com/watch?v=trOjXFjYESQ">
+                    <img src="./Images/streetDance.png" alt="streetDance" class="image">
+                    <div class="overlay">Street Dance</div>
+                </a>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="item">
+            <div class="container">
+                <a href="https://www.youtube.com/watch?v=jxMjwPODJfg">
+                    <img src="./Images/jazzDance.png" alt="jazzDance" class="image">
+                    <div class="overlay">Jazz Dance</div>
+                </a>
+            </div>
+            <div class="dancetext">
+                <a href="https://en.wikipedia.org/wiki/Jazz_dance">
+                    <img src="./Images/jazz.png" alt="jazz" class="image">
+                    <div class="content">
+                        Jazz dance is a performance dance and style that arose in the United States in the mid 20th
+                        century.[1] Jazz dance may allude to vernacular jazz about to Broadway or dramatic jazz. The two
+                        types expand on African American vernacular styles of dance that arose with jazz music.
+                        Vernacular
+                        jazz dance incorporates ragtime moves, Charleston, Lindy hop and mambo.
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="item">
+
+            <div class="dancetext">
+                <a href="https://en.wikipedia.org/wiki/Contemporary_dance">
+                    <img src="./Images/Contemporary.png" alt="Contemporary" class="image">
+                    <div class="content">
+                        Contemporary dance[1] is a genre of dance performance that developed during the mid-twentieth
+                        century and has since grown to become one of the dominant genres for formally trained dancers
+                        throughout the world, with particularly strong popularity in the U.S. and Europe. Although
+                        originally informed by and borrowing from classical, modern, and jazz styles, it has come to
+                        incorporate elements from many styles of dance.
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.youtube.com/watch?v=EzU2PD_G3qo">
+                    <img src="./Images/contemporaryDance.png" alt="contemporaryDance" class="image">
+                    <div class="overlay">Contemporary Dance</div>
+                </a>
+            </div>
+        </div>
+        <!-- same as above -->
+        <div class="item">
+            <div class="container">
+                <a href="https://www.youtube.com/watch?v=AHLkfsxBjkI">
+                    <img src="./Images/folkDance.png" alt="folkDance" class="image">
+                    <div class="overlay">Folk Dance</div>
+                </a>
+            </div>
+            <div class="dancetext">
+                <a href="https://en.wikipedia.org/wiki/Folk_dance">
+                    <img src="./Images/folk.png" alt="folk" class="image">
+                    <div class="content">
+                        A folk dance is a dance that reflects the life of the people of a certain country or region. Not
+                        all
+                        ethnic dances are folk dances. For example, ritual dances or dances of ritual origin are not
+                        considered to be folk dances. Ritual dances are usually called "Religious dances" because of
+                        their
+                        purpose. The terms "ethnic" and "traditional" are used when it is required to emphasize the
+                        cultural
+                        roots of the dance. In this sense, nearly all folk dances are ethnic ones.
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        // change css style
+        function changeCss(id)
+        {
+        // for dark style   
+            if(id==1){
+                document.getElementById("CSS"+id).disabled=false;
+                document.getElementById("CSS"+2).disabled=true;
+            }
+            // for light style
+            else{
+                document.getElementById("CSS"+id).disabled=false;
+                document.getElementById("CSS"+1).disabled=true;
+            }
+        }
+
+        // set up the initial num of slide
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls function
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls function
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // showSlides function processing the elements
+        function showSlides(n) {
+            let i;
+            // obtain the slide object list
+            let slides = document.getElementsByClassName("mySlides");
+            // obtain the demo object list
+            let dots = document.getElementsByClassName("demo");
+            // obtain the caption object list
+            let captionText = document.getElementById("caption");
+            // let the after page of last page next be the first page
+            if (n > slides.length) { slideIndex = 1 }
+            // let the previous page of the first page be the last page
+            if (n < 1) { slideIndex = slides.length }
+
+            // loop to set all slide to display none
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            // make all demo be not active
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            // set current slide to display in block
+            slides[slideIndex - 1].style.display = "block";
+            // set current demo be active
+            dots[slideIndex - 1].className += " active";
+            // set current slide text
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
+
+</html>

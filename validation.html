@@ -1,0 +1,106 @@
+<!-- https://youtu.be/Uajro212JE0 -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- basic setting and link in the Head -->
+
+<head>
+    <link rel='stylesheet' id="CSS1" type="text/css" href="./CSS/dark.css" title="dark">
+    <link rel='stylesheet' id="CSS2"  type="text/css" href="./CSS/light.css" title="light" DISABLED>
+
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+
+<!-- this page contain a image map to all related pages and resources -->
+
+<body id="validation">
+    
+    <!-- The topnav bar with dropdown-->
+    <div class="topnav" id="myTopnav">
+        <a  href="./index.html">Gallery</a>
+        <a href="./socialfeed.html">SocialFeed</a>
+        <a href="./reflection.html">Reflection</a>
+        <a class="active" href="./validation.html">Validation</a>
+        <a href="./original.html">Original</a>
+        <div class="dropdown">
+            <button class="dropbtn">Others
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./introduction.html">Introduction</a>
+                <a href="./imagemap.html">Imagemap</a>
+                <a href="./sourcelog.html">SourceLog</a>
+                <a href="./sitemap.html">Sitemap</a>
+                <a href="./feedback.html">Feedback</a>
+            </div>
+        </div>
+      </div> 
+
+    <!-- The social media icon bar -->
+    <!-- This is share button and follow button group -->
+    <div class="icon-bar">
+        <a href="javascript:changeCss(1)" style="background-color: rgba(10, 10, 10, 0.6); color:antiquewhite" >dark</a>
+        
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpartch.anu.edu.au.virtual.anu.edu.au%2F%7Eu7167582%2Findex.html&amp;src=sdkpreparse"
+            class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter"
+            data-text="This is a wonderful dancer website!"
+            data-url="http://partch.anu.edu.au.virtual.anu.edu.au/~u7167582/index.html"><i
+                class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCKi9kxQTKMKkepFSroaoLXw" class="youtube"><i
+                class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/siyayan1222" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/xiran-yan-363a02189" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+        <a href="javascript:changeCss(2)" style="background-color: rgba(255, 255, 255, 0.7); color:black">light</a>
+
+    </div>
+    
+    <!-- head title of this page -->
+    <div class="title">
+        <h1>Validation &nbsp;&nbsp;  Page</h1>
+    </div>
+
+    <div class="maincontent">
+        <h2>Html pages validation</h2>
+        <img src="./Images/HtmlChecker.png" alt="HtmlChecker" >
+        <hr>
+        <div id="text">
+        <p>All Html pages validation are the same, so I do not put duplicate images here.
+        </p>
+        <p> The reason for not fixing is: I have used a google font-family named(Bungee Shade), which breaks the rule of no space inside the href tag.</p>
+        </div>
+        <hr>
+        <h2>Css page validation</h2>
+        <img src="./Images/CssChecker.png" alt="CssChecker" >
+        <hr>
+        <div id="text">
+        <p>The CSS page do not has any errors or warnings!
+        </p>
+        </div>
+        <hr>
+    </div>
+    <script>
+        // change css style
+        function changeCss(id) {
+            // for dark style   
+            if (id == 1) {
+                document.getElementById("CSS" + id).disabled = false;
+                document.getElementById("CSS" + 2).disabled = true;
+            }
+            // for light style
+            else {
+                document.getElementById("CSS" + id).disabled = false;
+                document.getElementById("CSS" + 1).disabled = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

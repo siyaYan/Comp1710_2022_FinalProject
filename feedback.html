@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- basic setting and link in the Head -->
+
+<head>
+    <link rel='stylesheet' id="CSS1" type="text/css" href="./CSS/dark.css" title="dark">
+    <link rel='stylesheet' id="CSS2"  type="text/css" href="./CSS/light.css" title="light" DISABLED>
+
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+
+<!-- website contain a simply form collecting basic info and feedback -->
+
+<body id="feedBack">
+
+    <!-- The social media icon bar -->
+    <!-- This is share button and follow button group -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v15.0" nonce="bfPODkwH"></script>
+    
+    <div class="icon-bar">
+        <a href="javascript:changeCss(1)" style="background-color: rgba(10, 10, 10, 0.6); color:antiquewhite" >dark</a>
+        
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpartch.anu.edu.au.virtual.anu.edu.au%2F%7Eu7167582%2Findex.html&amp;src=sdkpreparse"
+            class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter"
+            data-text="This is a wonderful dancer website!"
+            data-url="http://partch.anu.edu.au.virtual.anu.edu.au/~u7167582/index.html"><i
+                class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCKi9kxQTKMKkepFSroaoLXw" class="youtube"><i
+                class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/siyayan1222" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/xiran-yan-363a02189" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+        <a href="javascript:changeCss(2)" style="background-color: rgba(255, 255, 255, 0.7); color:black">light</a>
+
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html">Gallery</a>
+        <a href="./socialfeed.html">SocialFeed</a>
+        <a href="./reflection.html">Reflection</a>
+        <a href="./validation.html">Validation</a>
+        <a href="./original.html">Original</a>
+        <div class="dropdown">
+            <button class="dropbtn">Others
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./introduction.html">Introduction</a>
+                <a href="./imagemap.html">Imagemap</a>
+                <a href="./sourcelog.html">SourceLog</a>
+                <a href="./sitemap.html">Sitemap</a>
+                <a class="active" href="./feedback.html">Feedback</a>
+            </div>
+        </div>
+      </div>  
+    <!-- head title of this page -->
+    <div class="title">
+        <h1>Feedback &nbsp;&nbsp; Form</h1>
+    </div>
+
+    <!-- feedback form section -->
+    <div class="maincontent">
+
+        <!-- set up form action -->
+        <form enctype="text/plain" action="mailto:Xiran.Yan@anu.edu.au?subject=feedbacks">
+
+            <!-- name text question section -->
+            <div id="name">
+                <label for="nametext">Your name</label><br>
+                <input id="nametext" type="text" name="name" size="35" maxlength="50" placeholder="Your name is ...">
+            </div>
+
+            <!-- address text question section -->
+            <div id="address">
+                <label for="addresstext">Your email address</label><br>
+                <input id="addresstext" type="text" name="address" size="35" maxlength="50"
+                    placeholder="Your email is ...">
+            </div>
+
+            <!-- gender radio question section -->
+            <div id="gender">
+                <label>Your gender</label><br>
+                <div class="choice">
+                    <input type="radio" name="gender" id="Male" value="Male">Male
+                    <input type="radio" id="Female" name="gender" value="Female">FeMale
+                    <input type="radio" id="GenderOther" name="gender" value="Other">Other
+                    <input type="radio" id="GenderNotSay" name="gender" value="NotSay">I perfer not to say
+                </div>
+            </div>
+
+            <!-- genres checkbox question section -->
+            <div id="genres">
+                <label>Dance perference</label><br>
+                <div class="choice">
+                    <input type="checkbox" name="genres" id="HipHop" value="HipHop">HipHop
+                    <input type="checkbox" id="Jazz" name="genres" value="Jazz">Jazz
+                    <input type="checkbox" name="genres" id="Ballet" value="Ballet">Ballet
+                    <input type="checkbox" id="Urban" name="genres" value="Urban">Urban
+                    <input type="checkbox" name="genres" id="Folk" value="Folk">Folk
+                    <input type="checkbox" id="GenresOthers" name="genres" value="Others">Others
+                    <input type="checkbox" id="GenresNotSay" name="genres" value="NotSay">I perfer not to say
+                </div>
+            </div>
+
+            <!-- feedback textarea question section -->
+            <div id="feedback">
+                <label for="feedbacktext">Please fill in your feedback below </label><br>
+                <textarea id="feedbacktext" name="feedback" rows="10" cols="30"
+                    placeholder="Please type your feedback here  ..."></textarea>
+            </div>
+
+            <!-- submit and clear section -->
+            <div id="end">
+                <hr>
+                <!-- two alternative ways -->
+                <!-- <button type="submit">Send it</button> or <button type="reset">Clear</button> -->
+                <input type="reset" value="Clear" id="reset" > <input type="submit" value="Submit" id="submit" >
+                <hr>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        // change css style
+        function changeCss(id) {
+            // for dark style   
+            if (id == 1) {
+                document.getElementById("CSS" + id).disabled = false;
+                document.getElementById("CSS" + 2).disabled = true;
+            }
+            // for light style
+            else {
+                document.getElementById("CSS" + id).disabled = false;
+                document.getElementById("CSS" + 1).disabled = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

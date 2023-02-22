@@ -1,0 +1,725 @@
+/* This is the combined CSS setting that apply to all pages. */
+
+/* set up the background-color for all pages */
+* {
+    box-sizing: border-box
+}
+/* set up the body background color */
+body {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* set up the title font for all pages*/
+.title{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 10px;
+    width: 85%;
+    min-width: 850px;
+    max-width: 1250px;
+    font-family: "Bungee Shade";
+}
+
+/* set up the main content position for all pages */
+.maincontent {
+    padding: 10px 0px;
+    margin: auto;
+    width: 85%;
+    position: relative;
+    min-width: 850px;
+    max-width: 1250px;
+}
+
+/* set up the initial h1 with style for all pages */
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* set up the initial h2 with 30-bold-black for all pages */
+h2 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* set up decoration for all links*/
+a {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* PART 2: Feedback Settings*/
+
+/* set up the background colour of this page */
+#feedBack .maincontent{
+    background-color: #F2BB9B;
+}
+
+
+/* set up all feedback questions position */
+#name,
+#address,
+#feedback,
+#gender,
+#genres {
+    margin: 15px 20px;
+    width: auto;
+}
+
+/* set up all feedback answers position */
+#name input,
+#address input,
+#feedback textarea,
+.choice {
+    margin: 10px 0px 0px 0px;
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/* set the decoration of the submit button */
+#submit {
+    background-color: #55ACEE;
+    margin-left: 20px;
+}
+/* set the position of reset button*/
+#reset{
+    margin-left: 20px;
+}
+
+/* set up submit interaction */
+#reset:hover {
+    background-color: brown;
+    cursor: grab;
+}
+
+/* set up clear interaction */
+#submit:hover {
+    background-color: green;
+    cursor: grab;
+}
+
+/* set up the initial form setting for all pages */
+form {
+    margin: 50px auto;
+    background-color: rgba(255,255, 255, 0.3);
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+}
+
+/* set up the default label setting in the form for all pages */
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+/* The Dance image */
+._image {
+  /* Set a specific height */
+  /* height: 80%; */
+  justify-content: center;
+  position: relative;
+  background-color: #222;
+}
+
+._image img{
+    display: block;
+    width: 100%;
+    height:auto;
+    margin: auto;
+
+}
+
+
+/* Place text in the middle of the image */
+._text {
+    background-color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+}
+/* set up the text */
+._text h1{
+    font-size:50px;
+}
+._text p{
+    padding: 20px 100px;
+    text-indent: 50px;
+    line-height: 1.5;
+    font-size: 26px;
+}
+/* modify the goal text */
+#mission p{
+    text-indent: 0px;
+    font-size: 28px;
+}
+
+/* css for validation */
+#validation img{
+    display: block;
+    width:90%;
+    margin: 10px auto;
+}
+
+#validation .maincontent{
+    background-color:#76CC82; 
+    justify-items: center; 
+    padding: 20px;
+}
+#validation #text{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0,0, 0, 0.4);
+    padding: 20px;
+}
+
+/* css for socialFeed */
+#socialFeed .maincontent{
+    background-color:#99C5F0; 
+    justify-items: center; 
+
+}
+#socialFeed .feed{
+    background-color:rgba(255, 255, 255, 0.5); 
+    display: block;
+    margin: 10px auto;
+    margin-top: 50px;
+    /* padding-top: 50px; */
+    width: 90%;
+}
+
+
+/* socialfeed */
+#socialFeed .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+#socialFeed .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+
+
+
+/* PART 4: Site Map & SourceLog Settings */
+
+/* modify the background colour for site map */
+#siteMap .maincontent{
+    background-color:#F2C185; 
+    justify-items: center; 
+}
+
+/* set up the initial table setting for all pages */
+table {
+    background-color: rgba(249, 247, 247, 0.6);  
+    border-radius: 10px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 50px 0px;
+    width: 80%;
+}
+
+/* set up the initial table head setting for all pages */
+th {
+    font-size: large;
+    padding: 15px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* set up the initial table cell setting for all pages */
+td {
+    font-size: large;
+    padding: 10px;
+    color: #222;
+
+}
+
+/* set up the initial table caption setting for all pages */
+caption {
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+/* modify the table cell for sourcelog page */
+#sourceLog td {
+    border: #222;
+}
+
+/* modify the tabl for source log page */
+#sourceLog table {
+    margin: 10px auto;
+    padding: 10px 0px;
+
+}
+
+/* modify the background color for source log */
+#sourceLog .maincontent{
+    
+    background-color: #5C96F2;
+}
+
+/* perform interaction with mouse */
+#sourceLog .row:hover {
+    background-color: rgba(255,255,255, 0.6);
+}
+
+/* set up thumbnails size  */
+#sourceLog .thumbnail{
+    width: auto;
+    height: 70px;
+}
+
+
+/* PART 5: Image Map & Gallery Settings*/
+
+/* Image Map section*/
+/* center the image  */
+#imageMap img{
+    margin: auto;
+    display: block;
+    min-width: 850px;
+    max-width: 1250px;
+}
+
+/* set up container size range for image map page */
+#imageMap .maincontent,#imageMap .title{
+    min-width: 850px;
+    max-width: 1250px;
+}
+
+/* set up the content colour for image map*/
+#imageMap .maincontent{
+    background-color:  #96D9B9;
+}
+
+/* the first gallery */
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* mouse hover on first gallery container, text shows */
+.mySlides:hover .text-block {
+    opacity: 1;
+}
+/* set up the size of slide image */
+.mySlides img{
+    width:100%;
+    height:auto;
+}
+/* sdd a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* -webkit-user-select: none; */
+}
+
+/* position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 1px;
+}
+
+/* container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+.column img{
+        width: 100%;
+}
+
+
+/* set up the responsive text */
+.text-block {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+/* the second gallery */
+/* set up the secone gallery section's item position */
+.item {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+/* Container needed to position the overlay. */
+.container {
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    max-width: 350px;
+    max-height: 645px;
+    height: auto;
+    min-width: 250px;
+}
+
+/* set up the image */
+.container .image {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.container .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* set up the position,size and colour for dance text section*/
+.dancetext {
+    position: relative;
+    display: inline-block;
+    margin: 0px 5px;
+    text-shadow: 2px 2px 5px red;
+    width: 100%;
+    max-width: 900px;
+    max-height: 645px;
+    height: 100%;
+    min-width: 600px;
+}
+
+/* set up the position, color and interaction of text content */
+.dancetext .content {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.6);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    min-width: 600px;
+    padding: 10px;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 24px;
+
+}
+/* when hover on the text, the text shows */
+.dancetext:hover .content {
+    opacity: 1;
+}
+
+/* set up the back image of dance text */
+.dancetext .image {
+    width: 100%;
+    max-width: 900px;
+    max-height: 645px;
+    height: 100%;
+    min-width: 600px;
+}
+
+/* gallery end */
+#gotomap{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* social-media-butten */
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #555;
+    overflow: hidden;
+    width: 85%;
+    min-width: 850px;
+    max-width: 1250px;
+    margin: auto;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    
+    width: 17%;
+  }
+  .dropdown a{
+    width: 100%;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    /* font-family: inherit; */
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #000;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  
+/*original section*/
+/* center the image  */
+#original img{
+    margin: auto;
+    display: block;
+    min-width: 850px;
+    max-width: 1250px;
+}
+
+/* set up container size range for image map page */
+#original .maincontent,#orginal .title{
+    min-width: 850px;
+    max-width: 1250px;
+}
+
+/* set up the content colour for image map*/
+#original .maincontent{
+    background-color:  #96D9B9;
+}
